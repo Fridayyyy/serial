@@ -14,6 +14,7 @@ find_package(Qt5 COMPONENTS
         Widgets
         Multimedia
         MultimediaWidgets
+        SerialPort
         REQUIRED)
 
 add_executable(serial main.cpp videoPlayer.cpp videoPlayer.h serial.cpp serial.h)
@@ -23,6 +24,7 @@ target_link_libraries(serial
         Qt5::Widgets
         Qt5::Multimedia
         Qt5::MultimediaWidgets
+        Qt5::SerialPort
         )
 
 if (WIN32)

@@ -24,7 +24,7 @@ private:
     QPushButton *fileButton;
 
     void init();
-private slots:
+public slots:
     void play();
     void onButtonSetClicked();
 };
